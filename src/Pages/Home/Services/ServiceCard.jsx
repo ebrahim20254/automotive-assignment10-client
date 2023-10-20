@@ -10,9 +10,6 @@ const ServiceCard = ({service}) => {
   <div className="card-body items-center text-center">
     <h2 className="card-title">{brand_name}</h2>
     <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
   </div>
 </div>
     );
