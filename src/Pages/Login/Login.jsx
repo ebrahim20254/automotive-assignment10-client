@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import img from '../../assets/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from '../../firebase/firebase.config';
 
 const Login = () => {
   const {signIn} = useContext(AuthContext);
@@ -20,6 +22,20 @@ const Login = () => {
       })
       .catch(error =>{
         console.log(error);
+      })
+    }
+
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    const handleGoogleSignIn = () =>{
+      signInWithPopup(auth, provider)
+      .then(result => {
+        const user =result.user;
+        console.log(user);
+      })
+      .catch(error =>{
+         console.log(error);
       })
     }
 
@@ -49,6 +65,7 @@ const Login = () => {
         </div>
         <div className="form-control mt-6">
           <input className="btn btn-primary" type="submit" value="Login" />
+          <button onClick={ handleGoogleSignIn} className='btn btn-secondary my-4'>Google</button>
         </div>
       </form>
       <p className='my-4 text-center'>New to Automotive <Link className='text-orange-600 font-bold' to="/register">Register</Link> </p>

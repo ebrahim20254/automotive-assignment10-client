@@ -4,8 +4,14 @@ import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
-  const {user} = useContext(AuthContext);
-  
+  const {user, logOut} = useContext(AuthContext);
+
+  const handleSignOut = () =>{
+     logOut()
+     .then()
+       .catch()
+  }
+
     const links = <>
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/product">Add Product</NavLink></li>
@@ -34,12 +40,14 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+   <img className=" rounded-full mr-4" src={user?.photoURL} alt="" />
+   <p className="mr-4">{user?.email}</p>
     {
       user ?
-      <button className="btn">LogOut</button>
+      <button onClick={handleSignOut}  className="btn">LogOut</button>
       :
       <Link to="/login">
-      <button className="btn">Login</button>
+      <button  className="btn">Login</button>
       </Link>
     }
   </div>
