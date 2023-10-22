@@ -14,8 +14,8 @@ const About = () => {
       <img src={img2} className="w-1/2 absolute right-5 top-1/2 rounded-lg border-6 border-white shadow-2xl" />
       </div>
      <div className=' lg:w-1/2 space-y-6'>
-      <h1 className="text-5xl font-bold">We are qualified & of experience in this field</h1>
-      <p>We are a leading card driver software company, specializing in developing cutting-edge drivers for various card reader devices. With a strong commitment to innovation and security, we empower businesses and individuals to seamlessly interact with smart cards, ensuring reliability and data protection.</p>
+      <h1 className="text-6xl font-bold">Best way to find your <span className=' text-orange-600'>dream</span> car</h1>
+      <p>My dream car is a sleek and powerful Tesla Model S, known for its cutting-edge electric technology and impressive acceleration. Its elegant design and eco-friendly features make it the perfect combination of style and sustainability. Driving it would be a thrilling and responsible experience.</p>
       <p>Car engineers design, develop, and improve automobiles. They integrate advanced technologies, enhance safety, and optimize performance. These professionals are vital to the automotive industry, shaping the vehicles we drive today and in the future.</p>
       <button className="btn btn-warning ml-8">Get More Info</button>
       </div>
