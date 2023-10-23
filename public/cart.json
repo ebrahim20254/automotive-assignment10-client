@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Mercedes-Benz GLE",
+        "brand_name": "Mercedes-Benz ",
+        "photo": "https://i.ibb.co/LNvxz8w/images-1.jpg",
+        "description": "Luxurious, powerful, and spacious, the Mercedes-Benz GLE offers top-tier performance.",
+        "price": "$ 54.55",
+        "type": "Mercedes-Benz GLE is a luxury SUV",
+        "rating": "4.7"
+    },
+    {
+        
+        "name": "Mercedes-Benz GLC",
+        "brand_name": "Mercedes-Benz ",
+        "photo": "https://i.ibb.co/vQFGxqj/Benz01.jpg",
+        "description": "The Mercedes-Benz GLC combines elegance, agility, and versatility in one compact SUV",
+        "price": "$ 44.58",
+        "type": "Mercedes-Benz GLC is a luxury SUV",
+        "rating": "4.8"
+    },
+    {
+        "name": "Mercedes-Benz S-Class",
+        "brand_name": "Mercedes-Benz ",
+        "photo": "https://i.ibb.co/bX5QwZp/chauffeur-driven-car-hire-1.jpg",
+        "description": "The Mercedes-Benz S-Class epitomizes luxury, sophistication, and cutting-edge technology.",
+        "price": "$ 64.46",
+        "type": "Mercedes-Benz S-Class is a luxury SUV",
+        "rating": "4.6"
+    }
+    
+]
