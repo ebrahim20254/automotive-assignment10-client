@@ -1,5 +1,62 @@
 [
     {
+        "name": "Toyota Camry",
+        "brand_name": "Toyota",
+        "photo": "https://i.ibb.co/WtWhXTr/carjpg.jpg",
+        "description": "Luxurious, powerful, and spacious, the Mercedes-Benz GLE offers top-tier performance.",
+        "price": "$ 54.55",
+        "type": "Mercedes-Benz GLE is a luxury SUV",
+        "rating": "4.7"
+    },
+    {
+        
+        "name": "Toyota Tacoma",
+        "brand_name": "Toyota",
+        "photo": "https://i.ibb.co/S66b0k6/tesla.jpg",
+        "description": "The Mercedes-Benz GLC combines elegance, agility, and versatility in one compact SUV",
+        "price": "$ 44.58",
+        "type": "Mercedes-Benz GLC is a luxury SUV",
+        "rating": "4.8"
+    },
+    {
+        "name": "Toyota Corolla",
+        "brand_name": "Toyota ",
+        "photo": "https://i.ibb.co/bX5QwZp/chauffeur-driven-car-hire-1.jpg",
+        "description": "The Mercedes-Benz S-Class epitomizes luxury, sophistication, and cutting-edge technology.",
+        "price": "$ 64.46",
+        "type": "Mercedes-Benz S-Class is a luxury SUV",
+        "rating": "4.6"
+    },
+    {
+        "name": "Ford Explorer",
+        "brand_name": "Ford",
+        "photo": "https://i.ibb.co/HFPz3SM/mitsubishi.jpg",
+        "description": "Luxurious, powerful, and spacious, the Mercedes-Benz GLE offers top-tier performance.",
+        "price": "$ 54.55",
+        "type": "Mercedes-Benz GLE is a luxury SUV",
+        "rating": "4.7"
+    },
+    {
+        
+        "name": "Ford F-150",
+        "brand_name": "Ford",
+        "photo": "https://i.ibb.co/wScMQqd/man-traveling.jpg",
+        "description": "The Mercedes-Benz GLC combines elegance, agility, and versatility in one compact SUV",
+        "price": "$ 44.58",
+        "type": "Mercedes-Benz GLC is a luxury SUV",
+        "rating": "4.8"
+    },
+    {
+        "name": "Ford Escape",
+        "brand_name": "Ford ",
+        "photo": "https://i.ibb.co/HFPz3SM/mitsubishi.jpg",
+        "description": "The Mercedes-Benz S-Class epitomizes luxury, sophistication, and cutting-edge technology.",
+        "price": "$ 64.46",
+        "type": "Mercedes-Benz S-Class is a luxury SUV",
+        "rating": "4.6"
+    },
+    
+    {
         "name": "Mercedes-Benz GLE",
         "brand_name": "Mercedes-Benz ",
         "photo": "https://i.ibb.co/LNvxz8w/images-1.jpg",

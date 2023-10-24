@@ -4,31 +4,8 @@
         "image": "https://i.ibb.co/qCzySLf/toyota.jpg",
         "brand_name": "Toyota",
         "service_description": "Cars are often associated with freedom and independence. Dreaming about driving a car may symbolize a desire for more control over your life or a need to break free from limitations or constraints.",
-        "price": 7600,
-        "facility": [
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            }
-            
-        ]
+        "price": 7600
+      
     },
 
     {
@@ -36,31 +13,8 @@
         "image": "https://i.ibb.co/BG5MpKJ/Ford-Logo-500x281.png",
         "brand_name": "Ford",
         "service_description": "Cars are often associated with freedom and independence. Dreaming about driving a car may symbolize a desire for more control over your life or a need to break free from limitations or constraints.",
-        "price": 7600,
-        "facility": [
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            }
-            
-        ]
+        "price": 7600
+      
     },
 
     {
@@ -68,63 +22,17 @@
         "image": "https://i.ibb.co/ctwtJrr/images.jpg",
         "brand_name": "Honda",
         "service_description": "Cars are often associated with freedom and independence. Dreaming about driving a car may symbolize a desire for more control over your life or a need to break free from limitations or constraints.",
-        "price": 7600,
-        "facility": [
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            }
-            
-        ]
+        "price": 7600
+       
     },
 
     {
         "service_id": "4",
         "image": "https://i.ibb.co/pyPvVpS/download.png",
-        "brand_name": "Toyota",
+        "brand_name": "BMW",
         "service_description": "Cars are often associated with freedom and independence. Dreaming about driving a car may symbolize a desire for more control over your life or a need to break free from limitations or constraints.",
-        "price": 7600,
-        "facility": [
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            }
-            
-        ]
+        "price": 7600
+        
     },
 
     {
@@ -132,61 +40,15 @@
         "image": "https://i.ibb.co/7NzSnPR/mercedes.jpg",
         "brand_name": "Mercedes-Benz",
         "service_description": "Cars are often associated with freedom and independence. Dreaming about driving a car may symbolize a desire for more control over your life or a need to break free from limitations or constraints.",
-        "price": 18500,
-        "facility": [
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            }
-            
-        ]
+        "price": 18500
+
     },
     {
         "service_id": "6",
         "image": "https://i.ibb.co/m0qSZRc/download-1.png",
         "brand_name": "Volkswagen",
         "service_description": "Cars are often associated with freedom and independence. Dreaming about driving a car may symbolize a desire for more control over your life or a need to break free from limitations or constraints.",
-        "price": 7600,
-        "facility": [
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            },
-            {
-                "name": "Instant Car Services",
-                "image": "https://i.ibb.co/LNvxz8w/images-1.jpg",
-                "price": 8500,
-                "type": "toyota",
-                "rating": 5
-            }
-            
-        ]
+        "price": 7600
+
     }
 ]
