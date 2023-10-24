@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyCartProduct = ({ product }) => {
@@ -49,8 +50,7 @@ const MyCartProduct = ({ product }) => {
                     <div className="card-actions justify-end">
                         <div className="btn-group btn-group-vertical space-y-4">
                             <button className="btn">view</button>
-                            {/* <Link to={`update/${_id}`}><button className="btn">Update</button></Link> */}
-                            <button className="btn">Update</button>
+                            <Link to={`/update/${_id}`}><button className="btn">Update</button></Link>
                             <button onClick={() => handleDelete(_id)} className="btn bg-orange-500">Delete</button>
                         </div>
                     </div>
