@@ -2,17 +2,18 @@
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content w-[90%] mx-auto my-12">
+        <footer className="footer p-10 bg-gray-200 text-base-content w-[90%] mx-auto my-12">
         <aside>
          <img  src={img} className=" w-[100px] h-[100px]  " alt="" />
-          <p>Car House.<br/>Providing reliable tech since 1992</p>
+          <p>Car House.<br/>Providing reliable tech since 2002</p>
         </aside> 
         <nav>
           <header className="footer-title">Services</header> 
-          <a className="link link-hover">Branding</a> 
-          <a className="link link-hover">Design</a> 
-          <a className="link link-hover">Marketing</a> 
-          <a className="link link-hover">Advertisement</a>
+          <a className="link link-hover">Toyota</a> 
+          <a className="link link-hover">BMW</a> 
+          <a className="link link-hover">Honda</a> 
+          <a className="link link-hover">Mercedes-Benz</a>
+          <a className="link link-hover">Ford</a>
         </nav> 
         <nav>
           <header className="footer-title">Company</header> 
@@ -25,7 +26,7 @@ const Footer = () => {
           <header className="footer-title">Legal</header> 
           <a className="link link-hover">Terms of use</a> 
           <a className="link link-hover">Privacy policy</a> 
-          <a className="link link-hover">Cookie policy</a>
+          <a className="link link-hover">Car House Services</a>
         </nav>
       </footer>
     );

@@ -6,6 +6,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../Pages/Error/Error";
 import DetailsPage from "../Pages/Home/DetailsPage/DetailsPage";
+import MyCart from "../Pages/MyCart/MyCart";
+import Update from "../Pages/UpdateButton/Update";
 
 
 const router = createBrowserRouter([
@@ -24,6 +26,16 @@ const router = createBrowserRouter([
                 loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
                
             },
+            {
+                path: '/myCart',
+                element: <MyCart></MyCart>,
+                loader: () => fetch('http://localhost:5000/cart')
+            },
+            // {
+            //     path: 'update',
+            //     element: <Update></Update>,
+            //     loader: ({params}) => fetch(`http://localhost:5000/cart/${params.id}`)
+            // },
             {
                 path: '/login',
                 element: <Login></Login>

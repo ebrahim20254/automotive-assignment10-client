@@ -9,7 +9,7 @@ const DetailsPage = () => {
     return (
       <div className='w-[90%] mx-auto'>
         <Slider></Slider>
-        <h3>cart data : {carts.length}</h3>
+
         <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
           {
             carts?.map(cart => <DetailCart key={cart.id} cart={cart}></DetailCart>)

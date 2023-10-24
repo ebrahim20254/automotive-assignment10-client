@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 
 const AddProduct = () => {
     const handleAddProduct = event =>{
@@ -13,10 +13,30 @@ const AddProduct = () => {
         const description= form.description.value;
         const rating = form.rating.value;
 
-        const order = {
+        const newCart = {
             photo, name, brand, type, description, rating
         }
-        console.log(order);
+        console.log(newCart);
+
+        fetch('http://localhost:5000/cart',{
+          method:'POST',
+          headers: {
+            'content-type' : 'application/json'
+          },
+          body: JSON.stringify(newCart)
+        })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data)
+          if(data.insertedId){
+            Swal.fire({
+              title: 'success',
+              text: 'product added successfully',
+              icon: 'success',
+              confirmButtonText: 'Cool'
+            })
+          }
+        })
     }
     return (
         <div className=" bg-[#F4F3F0] w-[60%] mx-auto text-center text-3xl my-6 card-body rounded-xl">
