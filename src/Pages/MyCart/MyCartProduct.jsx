@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const MyCartProduct = ({ product }) => {
+const MyCartProduct = ({ product, carts, setCarts }) => {
     const { _id, photo, name, brand_name, type, description, rating, price } = product;
 
     const handleDelete = _id => {
@@ -30,6 +30,8 @@ const MyCartProduct = ({ product }) => {
                                 'Your Car has been deleted.',
                                 'success'
                               )
+                              const remaining = carts.filter( car => car._id !== _id)
+                              setCarts(remaining);
                         }
                     })
             }

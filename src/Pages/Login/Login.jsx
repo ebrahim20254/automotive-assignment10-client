@@ -4,6 +4,8 @@ import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from '../../firebase/firebase.config';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const {signIn} = useContext(AuthContext);
@@ -14,6 +16,17 @@ const Login = () => {
       const email = form.email.value;
       const password = form.password.value;
       console.log(email, password);
+      
+      if(password.length < 6){
+        setLoginError('Password should be at least 6 characters or long ');
+        return;
+      }
+      else if(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+        setLoginError(" password doesn't match")
+      }
+      else{
+        toast("Wow so easy success!");
+      }
 
       signIn(email, password)
       .then(result =>{
@@ -46,6 +59,7 @@ const Login = () => {
       <img src={img} alt="" />
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <ToastContainer />
       <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
         <h1 className="text-5xl font-bold text-center">Login</h1>

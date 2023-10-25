@@ -8,6 +8,8 @@ import Error from "../Pages/Error/Error";
 import MyCart from "../Pages/MyCart/MyCart";
 import UpdateProduct from "../Pages/MyCart/UpdateProduct";
 import DetailsPage from "../Pages/Home/DetailsPage/DetailsPage";
+import AddCart from "../Pages/Home/DetailsPage/AddCart";
+import DetailButton from "../Pages/Home/DetailsPage/DetailButton";
 
 
 const router = createBrowserRouter([
@@ -50,7 +52,16 @@ const router = createBrowserRouter([
                 element: <DetailsPage></DetailsPage>,
                 loader: ()=> fetch('/cart.json')
             },
-            
+            {
+                path: '/addCart/:id',
+                element: <AddCart></AddCart>
+            },
+            {
+                path: '/detailBtn/:id',
+                element: <DetailButton></DetailButton>,
+                loader: ()=> fetch('/cart.json')
+            }
+             
         ]
     }
 ]);

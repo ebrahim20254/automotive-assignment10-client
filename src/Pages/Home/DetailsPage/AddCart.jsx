@@ -1,12 +1,7 @@
-import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
-const UpdateProduct = () => {
-    const product = useLoaderData();
-    const {_id, photo, name, brand_name, type, description, rating, price } = product;
-
-
-    const handleUpdateAddProduct = event =>{
+const AddCart= () => {
+    const handleAddProduct = event =>{
         event.preventDefault();
 
         const form = event.target;
@@ -18,25 +13,25 @@ const UpdateProduct = () => {
         const description= form.description.value;
         const rating = form.rating.value;
 
-        const updateCarProduct = {
+        const newCart = {
             photo, name, brand, type, description, rating
         }
-        console.log(updateCarProduct);
+        console.log(newCart);
 
-        fetch(`http://localhost:5000/cart/${_id}`,{
-          method:'PUT',
+        fetch('http://localhost:5000/cart',{
+          method:'POST',
           headers: {
             'content-type' : 'application/json'
           },
-          body: JSON.stringify(updateCarProduct)
+          body: JSON.stringify(newCart)
         })
         .then(res => res.json())
         .then(data => {
           console.log(data)
-          if(data.modifiedCount > 0){
+          if(data.insertedId){
             Swal.fire({
               title: 'success',
-              text: 'product Updated successfully',
+              text: 'product added successfully',
               icon: 'success',
               confirmButtonText: 'Cool'
             })
@@ -45,15 +40,15 @@ const UpdateProduct = () => {
     }
     return (
         <div className=" bg-[#F4F3F0] w-[60%] mx-auto text-center text-3xl my-6 card-body rounded-xl">
-        <h2>Add Product</h2>
-        <form onSubmit={handleUpdateAddProduct}>
+        <h2>Add To Cart Product</h2>
+        <form onSubmit={handleAddProduct}>
         <div className="  ">
           <div className="form-control ">
              <label className="label">
             <span className="label-text">Image</span>
               </label>
              <label className="input-group">
-             <input type="text" name="photo" defaultValue={photo} placeholder=" Enter photo URL" className="input input-bordered w-full" />
+             <input type="text" name="photo" placeholder=" Enter photo URL" className="input input-bordered w-full" />
             </label>
            </div>
         </div>
@@ -64,7 +59,7 @@ const UpdateProduct = () => {
             <span className="label-text">Name</span>
               </label>
              <label className="input-group">
-             <input type="text" name="name" defaultValue={name} placeholder="Name" className="input input-bordered w-full" />
+             <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
             </label>
            </div>
           <div className="form-control w-1/2 ml-6">
@@ -72,7 +67,7 @@ const UpdateProduct = () => {
             <span className="label-text">Brand Name</span>
               </label>
              <label className="input-group">
-             <input type="text" name="brand"defaultValue={brand_name} placeholder="Brand Name" className="input input-bordered w-full" />
+             <input type="text" name="brand" placeholder="Brand Name" className="input input-bordered w-full" />
             </label>
            </div>
         </div>
@@ -83,7 +78,7 @@ const UpdateProduct = () => {
             <span className="label-text">Type</span>
               </label>
              <label className="input-group">
-             <input type="text" name="type" defaultValue={type} placeholder="Type" className="input input-bordered w-full" />
+             <input type="text" name="type" placeholder="Type" className="input input-bordered w-full" />
             </label>
            </div>
           <div className="form-control w-1/2 ml-6">
@@ -91,7 +86,7 @@ const UpdateProduct = () => {
             <span className="label-text">Price</span>
               </label>
              <label className="input-group">
-             <input type="text"name="price" defaultValue={price} placeholder="Price" className="input input-bordered w-full" />
+             <input type="text"name="price" placeholder="Price" className="input input-bordered w-full" />
             </label>
            </div>
         </div>
@@ -102,7 +97,7 @@ const UpdateProduct = () => {
             <span className="label-text">Short description</span>
               </label>
              <label className="input-group">
-             <input type="text" name="description" defaultValue={description} placeholder="Short description" className="input input-bordered w-full" />
+             <input type="text" name="description" placeholder="Short description" className="input input-bordered w-full" />
             </label>
            </div>
           <div className="form-control w-1/2 ml-6">
@@ -110,7 +105,7 @@ const UpdateProduct = () => {
             <span className="label-text">Rating</span>
               </label>
              <label className="input-group">
-             <input type="text" name="rating" defaultValue={rating} placeholder="Rating" className="input input-bordered w-full" />
+             <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
             </label>
            </div>
         </div>
@@ -120,4 +115,4 @@ const UpdateProduct = () => {
     );
 };
 
-export default UpdateProduct;
+export default AddCart;

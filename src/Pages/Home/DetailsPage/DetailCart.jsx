@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const DetailCart = ({ cart }) => {
-    const { name, photo, brand_name, description, price, rating } = cart;
+    const {_id, name, photo, brand_name, description, price, rating } = cart;
     return (
         <div className="my-12"> 
             <div className="card w-96 bg-base-300 shadow-xl ">
@@ -20,9 +21,9 @@ const DetailCart = ({ cart }) => {
                         <input type="radio" name="rating-4" className="mask mask-star-2 bg-green-500" />
                     </div>
                     <p>{description}</p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary w-full px-12">Details button</button>
-                        <button className="btn btn-secondary w-full px-12 my-4">Update button</button>
+                    <div className=" text-center">
+                        <Link to={`/detailBtn/${_id}`}><button className="btn btn-primary w-full px-12">Details button</button></Link>
+                        <Link to={`/addCart/${_id}`}><button className="btn btn-secondary  w-full px-12 mt-4">Update button</button></Link>
                     </div>
                 </div>
             </div>
