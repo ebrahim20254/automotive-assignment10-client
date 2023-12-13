@@ -2,7 +2,9 @@
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-gray-200 text-base-content w-[90%] mx-auto my-12">
+        <footer data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" className="footer p-10 bg-red-300 text-base-content w-[90%] mx-auto my-12 rounded-xl">
         <aside>
          <img  src={img} className=" w-[100px] h-[100px]  " alt="" />
           <p>Car House.<br/>Providing reliable tech since 2002</p>

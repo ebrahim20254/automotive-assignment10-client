@@ -18,7 +18,7 @@ const AddCart= () => {
         }
         console.log(newCart);
 
-        fetch('http://localhost:5000/cart',{
+        fetch('https://automotive-assignment10-server-rk6kkoett.vercel.app/cart',{
           method:'POST',
           headers: {
             'content-type' : 'application/json'
@@ -40,7 +40,7 @@ const AddCart= () => {
     }
     return (
         <div className=" bg-[#F4F3F0] w-[60%] mx-auto text-center text-3xl my-6 card-body rounded-xl">
-        <h2>Add To Cart Product</h2>
+        <h2>Update Car Product</h2>
         <form onSubmit={handleAddProduct}>
         <div className="  ">
           <div className="form-control ">

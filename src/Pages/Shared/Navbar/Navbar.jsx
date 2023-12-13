@@ -36,7 +36,7 @@ const Navbar = () => {
     <li><NavLink to="/login">Login</NavLink></li>
   </>
   return (
-    <div className="navbar rounded-xl py-2 px-4 w-[90%] mx-auto mb-4 my-6">
+    <div className="navbar rounded-xl py-2 px-4 w-[90%] mx-auto mb-4 my-6 bg-red-400">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,7 +50,7 @@ const Navbar = () => {
           <Link to="/" className="btn btn-ghost normal-case text-xl">
             <img className=" w-[100px] h-[100px]  -mt-6" src={logo} alt="" />
           </Link>
-          <h1 className=" text-3xl font-bold">Car<span className=" text-orange-600">Dream</span></h1>
+          <h1 className=" text-3xl font-bold">Car<span className=" text-white">Dream</span></h1>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

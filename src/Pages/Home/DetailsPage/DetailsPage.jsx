@@ -5,7 +5,7 @@ import DetailCart from './DetailCart';
 
 const DetailsPage = () => {
   const carts = useLoaderData();
-  console.log(carts);
+  // console.log(carts);
     return (
       <div className='w-[90%] mx-auto'>
         <Slider></Slider>

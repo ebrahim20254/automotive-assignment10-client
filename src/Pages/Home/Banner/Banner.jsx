@@ -1,10 +1,10 @@
-import img from '../../../assets/car-rental.jpg'
+import img from '../../../assets/car - Copy.jpg'
 
 
 const Banner = () => {
     return (
-      <div className='w-[90%]  mx-auto my-8'>
-        <img src={img} alt="" className='w-full  rounded-lg' />
+      <div className='w-[80%]  mx-auto my-8'>
+        <img data-aos="flip-up" src={img} alt="" className='w-full  rounded-lg' />
       </div>
     );
 };

@@ -7,7 +7,7 @@ const About = () => {
     <div className="my-12 w-[90%] mx-auto">
       <h2 className=' text-4xl text-center my-4 text-orange-500 font-bold'>About Us</h2>
       <p className=' text-xl text-center  w-[50%] mx-auto'>We are passionate about cars, dedicated to excellence. Your journey is our priority. Discover the road with us today.</p>
-      <div className="hero bg-base-200 h-[600px] my-4">
+      <div className="hero bg-red-200 h-[600px] my-4 rounded-xl">
         <div className="hero-content flex-col lg:flex-row">
           <div className=' lg:w-1/2 relative'>
             <img src={img1} className="w-3/4 rounded-lg shadow-2xl" />

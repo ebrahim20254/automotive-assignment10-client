@@ -7,7 +7,7 @@ const Choose = () => {
         <div className="w-[90%] mx-auto my-12">
             <h3 className=' text-4xl text-center my-4 text-orange-500 font-bold'>Why choose us</h3>
             <p className=' text-xl text-center  w-[50%] mx-auto'>Red, sleek, and fast, the American-made Ford Mustang GT roars down the open road, a symbol of classic American muscle.</p>
-            <div className="hero h-[600px] bg-base-300 my-8">
+            <div className="hero h-[600px] bg-red-300 my-8 rounded-xl">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className=" lg:w-1/2 space-y-4 mr-12">
                         <h3 className=" font-bold">Why choose us</h3>

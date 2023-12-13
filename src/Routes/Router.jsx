@@ -25,18 +25,18 @@ const router = createBrowserRouter([
             {
                 path: '/product/',
                 element: <AddProduct></AddProduct>,
-                loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({params})=> fetch(`https://automotive-assignment10-server-rk6kkoett.vercel.app/services/${params.id}`)
                
             },
             {
                 path: '/myCart',
                 element: <MyCart></MyCart>,
-                loader: () => fetch('http://localhost:5000/cart')
+                loader: () => fetch('https://automotive-assignment10-server-rk6kkoett.vercel.app/cart')
             },
             {
                 path: '/update/:id',
                 element: <UpdateProduct></UpdateProduct>,
-                loader: ({params}) => fetch(`http://localhost:5000/cart/${params.id}`)
+                loader: ({params}) => fetch(`https://automotive-assignment10-server-rk6kkoett.vercel.app/cart/${params.id}`)
             },
            
             {
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
                 element: <DetailButton></DetailButton>,
                 loader: ()=> fetch('/cart.json')
             }
-             
+
         ]
     }
 ]);

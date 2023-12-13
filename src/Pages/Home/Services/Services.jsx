@@ -1,4 +1,4 @@
-import { data } from "autoprefixer";
+
 import { useEffect, useState } from "react";
 import ServiceCard from "./ServiceCard";
 
@@ -7,10 +7,9 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://automotive-assignment10-server.vercel.app/services')
         .then(res=> res.json())
         .then(data => setServices(data))
-        // console.log(data);
     },[])
     return (
         <div className="w-[80%] mx-auto">
